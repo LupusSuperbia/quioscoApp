@@ -12,15 +12,15 @@ const Producto = ({ producto }) => {
        alt={`Imagen platillo ${nombre}`}
        width={400}
        height={400} />
-       <div className="p-5">
+       <div className="p-3">
         <h3 className="text-2xl font-bold">{nombre}</h3>
-        <p className="mt-5 font-black text-4lxl text-amber-500">
+        <p className="mt-5 font-black text-2xl md:text-3xl text-amber-500">
           {formatearDinero(precio)}
         </p>
 
         <button
         type="button"
-        className="bg-indigo-600 hover:bg-indigo-800 text-white p-3 mt-3 w-full"
+        className="bg-indigo-600 hover:bg-indigo-800 text-white p-1.5 md:p-3 mt-3 w-full text-center"
         onClick={() => {
           handleChangeModal()
           handleSetProducto(producto)}}>Agregar</button>
