@@ -29,7 +29,7 @@ const Total = () => {
           <input
             id="nombre"
             type={"text"}
-            className="br-gray-200 w-full lg:w-1/3 mt-3 p-2 rounded-md"
+            className="bg-gray-300  w-full lg:w-1/3 mt-3 p-2 rounded-md border border-slate-400 "
             value={nombre}
             onChange={e => setNombre(e.target.value) }
           />
