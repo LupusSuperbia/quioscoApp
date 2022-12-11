@@ -18,7 +18,7 @@ const QuioscoProvider = ({ children }) => {
   const router = useRouter();
 
   const obtenerCategorias = async () => {
-    const { data } = await axios("/api/categorias");
+    const { data } = await axios("/api/categoria");
     setCategorias(data);
   };
   useEffect(() => {
